@@ -57,7 +57,7 @@ Use these dummy credentials to test the application:
 The frontend connects to the backend API at `http://localhost:3000/api`. Make sure the backend server is running before starting the frontend.
 
 ### Authentication
-All API requests require an `x-api-key` header with a valid API key stored in `sessionStorage`.
+All API requests require a valid API key stored in `sessionStorage`.
 
 ### Key Endpoints Used
 - `GET /api/me` - Get current user information
