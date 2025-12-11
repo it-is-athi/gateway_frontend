@@ -32,10 +32,26 @@ npm run dev
 The application will open at `http://localhost:5173`.
 
 ## 🎮 Walkthrough
+
+### Test Accounts
+Use these dummy credentials to test the application:
+
+**Admin User:**
+- API Key: `admin-key-123`
+- Username: `admin`
+- Credits: 500
+
+**Member User:**
+- API Key: `athi-key-456`
+- Username: `athi`
+- Credits: 100
+
+### Steps
 1. **Login:** Use the default Admin key (`admin-key-123`).
 2. **Execute Commands:** Type `ls -la` in the terminal to see a successful execution (Credits -1).
 3. **Test Blocking:** Type `rm -rf /` to see the Rule Engine in action (Status: REJECTED).
 4. **Admin Controls:** Scroll down to the Admin section to add new Rules or view the Global Logs.
+5. **Test Member Access:** Logout and login with the member key (`athi-key-456`) to see the limited member view.
 
 ## 📡 API Integration
 The frontend connects to the backend API at `http://localhost:3000/api`. Make sure the backend server is running before starting the frontend.
