@@ -39,7 +39,7 @@ Use these dummy credentials to test the application:
 **Admin User:**
 - API Key: `admin-key-123`
 - Username: `admin`
-- Credits: 500
+- Credits: 999
 
 **Member User:**
 - API Key: `athi-key-456`
