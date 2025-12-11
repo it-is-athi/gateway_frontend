@@ -37,14 +37,22 @@ function App() {
   if (!apiKey || !user) {
     return (
       <div className="login-container">
-        <h1>🔐 Command Gateway</h1>
-        <form onSubmit={handleLogin}>
-          <input name="key" placeholder="Enter API Key" required />
-          <button type="submit">Login</button>
-        </form>
-        {error && <p className="error">{error}</p>}
-        <div className="hint">
-           <small>Try: admin-key-123</small>
+        <div className="login-card">
+          <div className="login-header">
+            <span className="lock-icon">🔐</span>
+            <h1>Command Gateway</h1>
+            <p className="subtitle">Secure Terminal Access</p>
+          </div>
+          <form onSubmit={handleLogin} className="login-form">
+            <input 
+              name="key" 
+              placeholder="Enter API Key" 
+              className="login-input"
+              required 
+            />
+            <button type="submit" className="login-button">Login</button>
+          </form>
+          {error && <p className="error">{error}</p>}
         </div>
       </div>
     );
